@@ -1,0 +1,14 @@
+cd Desktop
+mkdir test
+cd test
+copy NUL index.html
+copy NUL styles.css
+copy NUL commands.txt
+copy index.html index_2.html
+del styles.css
+cd ..
+mkdir destination
+move .\test\index_2.html .\destination
+dir test
+dir destination
+rd /s destination
